@@ -15,7 +15,13 @@ spec:
       containers:
         - name: springboot
           image: kshitijadaundkar/eks-jenkins-demo-1:v.0.0.1
-          imagePullPolicy: IfNotPresent
+          resources:
+            limits:
+              cpu: 500m
+              memory: 256Mi
+            requests:
+              cpu: 5m
+              memory: 256Mi
           ports:
             - containerPort: 8080
           env:

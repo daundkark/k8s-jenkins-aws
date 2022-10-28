@@ -1,6 +1,8 @@
 FROM openjdk:8-jdk-alpine
 ARG CURRENT_VERSION
 ARG JAR_FILE=build/libs/*${CURRENT_VERSION}.jar
+RUN echo ${CURRENT_VERSION} &&\
+    echo ${JAR_FILE}
 COPY ${JAR_FILE} app.jar
 
 RUN mkdir destination-dir-for-add

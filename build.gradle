@@ -2,7 +2,7 @@ plugins {
 	id 'org.springframework.boot' version '2.2.7.RELEASE'
 	id 'io.spring.dependency-management' version '1.0.9.RELEASE'
 	id 'java'
-	id 'pl.allegro.tech.build.axion-release' version '1.8.1'
+	id 'pl.allegro.tech.build.axion-release' version '1.14.0'
 }
 
 group = 'com.jhooq'

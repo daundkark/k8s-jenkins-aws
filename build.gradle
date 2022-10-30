@@ -8,7 +8,7 @@ plugins {
 
 sonarqube {
     properties {
-        property 'sonar.projectName', 'Example of SonarQube Scanner for Gradle Usage'
+        property 'sonar.projectName', 'Sonarscan analysis for k8s-jenkins-aws'
     }
 }
 

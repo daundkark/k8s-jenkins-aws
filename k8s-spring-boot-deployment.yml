@@ -14,8 +14,7 @@ spec:
     spec:
       containers:
         - name: springboot
-          image: kshitijadaundkar/eks-jenkins-demo-1:v.0.0.1
-          imagePullPolicy: Always
+          image: IMG_NAME
           resources:
             limits:
               cpu: 500m

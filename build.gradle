@@ -29,7 +29,7 @@ apply plugin: 'maven-publish'
 publishing {
     publications {
         mavenJava(MavenPublication) {
-            artifact file("build/libs/*.jar")
+            artifact file("*.jar")
         }
     }
 }

@@ -64,7 +64,6 @@ test {
 }
 
 artifactory{
-https://daundkark.jfrog.io/artifactory/artifactory-build-info/Jhooq-k8s/
     contextUrl = "https://daundkark.jfrog.io/artifactory"
     publish{
        repository{

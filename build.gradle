@@ -58,7 +58,9 @@ artifactory{
     contextUrl = "https://daundkark.jfrog.io/artifactory"
     publish{
        repository{
-           repoKey = 'daundkark-gradle-dev-local'       
+           repoKey = 'daundkark-gradle-dev-local'   
+	   username = 'jenkins'
+	   password = 'Jenkins@123'
        }
        defaults{
 	  publishArtifacts = true

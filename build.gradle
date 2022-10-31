@@ -24,6 +24,15 @@ sonarqube {
 }
 
 apply plugin: "com.jfrog.artifactory"
+apply plugin: 'maven-publish'
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+        }
+    }
+}
 
 group = 'com.jhooq'
 version = scmVersion.version
@@ -55,6 +64,7 @@ test {
 }
 
 artifactory{
+https://daundkark.jfrog.io/artifactory/artifactory-build-info/Jhooq-k8s/
     contextUrl = "https://daundkark.jfrog.io/artifactory"
     publish{
        repository{
@@ -63,6 +73,7 @@ artifactory{
 	   password = 'Jenkins@123'
        }
        defaults{
+          publications ('mavenJava')
 	  publishArtifacts = true
        }       
     }  

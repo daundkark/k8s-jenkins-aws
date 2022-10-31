@@ -26,14 +26,6 @@ sonarqube {
 apply plugin: "com.jfrog.artifactory"
 apply plugin: 'maven-publish'
 
-publishing {
-    publications {
-        mavenJava(MavenPublication) {
-            artifact file("*.jar")
-        }
-    }
-}
-
 group = 'com.jhooq'
 version = scmVersion.version
 sourceCompatibility = '1.8'
@@ -72,7 +64,6 @@ artifactory{
 	   password = 'Jenkins@123'
        }
        defaults{
-          publications ('mavenJava')
 	  publishArtifacts = true
        }       
     }  

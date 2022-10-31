@@ -61,13 +61,7 @@ artifactory{
            repoKey = 'daundkark-gradle-dev-local'       
        }
        defaults{
-          publications('mavenJava')
 	  publishArtifacts = true
        }       
-    }
-    resolve{
-    
-    }
-    
-    
+    }  
 }
